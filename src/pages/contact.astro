@@ -19,22 +19,23 @@ import Nav from '../components/Nav.astro';
             display: flex;
             flex-direction: row;
             margin-left: 15%;
+            margin-top: 5em;
         }
 
         .left-container{
-            background-image: url('../../assets/contact.jpeg');
+            background-image: url('../../assets/contact4.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.7;
-            width:50%;
+            width:55%;
         }
 
         .left-content{
             text-align:center;
             line-height:22px;
             z-index: 10;
-            color: white;
-            
+            color: black;
+            font-weight: bold;
         }
 
         h2{
@@ -45,13 +46,17 @@ import Nav from '../components/Nav.astro';
 
         .right-container{
             display: flex;
-            align-items: center;
-            margin-left: 10%;
+            margin-left: 15%;
+            
         }
 
         form{
             display:flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
         }
         
         input, textarea {
@@ -61,7 +66,6 @@ import Nav from '../components/Nav.astro';
             margin: 8px 0;
             width: 100%;
             font-size:0.8rem;
-            margin-left: 10px;
         }
 
         input:focus, textarea:focus{
@@ -94,10 +98,11 @@ import Nav from '../components/Nav.astro';
                 
                 <div class="left-container">
                     <div class="left-content">
-                        <h2>Let's Chat</h2>
-                        <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                        <h2>Let's Chat!</h2>
                         <br>
-                        <p>Feel free to send me a message in the contact form</p>
+                        <p>If you have a question, want to start a project or simply want to connect.</p>
+                        
+                        <p>Feel free to send me a message in the contact form.</p>
                     </div>
                 </div>
 
