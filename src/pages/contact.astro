@@ -1,0 +1,117 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="Contact | Agustina" />
+		<style>
+      
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+            width: 70%;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 15%;
+        }
+
+        .left-container{
+            background-image: url('../../assets/contact.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+            width:50%;
+        }
+
+        .left-content{
+            text-align:center;
+            line-height:22px;
+            z-index: 10;
+            color: white;
+            
+        }
+
+        h2{
+            font-size:2rem;
+            margin-bottom:1rem;
+            margin-top: 20%;
+        }
+
+        .right-container{
+            display: flex;
+            align-items: center;
+            margin-left: 10%;
+        }
+
+        form{
+            display:flex;
+            flex-direction: column;
+        }
+        
+        input, textarea {
+            background-color: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+            font-size:0.8rem;
+            margin-left: 10px;
+        }
+
+        input:focus, textarea:focus{
+            outline:1px solid pink;
+        }
+
+        #button {
+            border-radius: 20px;
+            border: 1px solid pink;
+            background-color: pink;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            transition: transform 80ms ease-in;
+            cursor:pointer;
+        }
+
+        #button:hover {
+            opacity:0.7;
+        }
+           
+        </style>
+    </head>
+	<body>
+		<Nav />
+        
+        <div class="container">
+                
+                <div class="left-container">
+                    <div class="left-content">
+                        <h2>Let's Chat</h2>
+                        <p>Whether you have a question, want to start a project or simply want to connect.</p>
+                        <br>
+                        <p>Feel free to send me a message in the contact form</p>
+                    </div>
+                </div>
+
+                <div class="right-container">
+                        <form>
+                                <input type="text" placeholder="Name *"  />
+                                <input type="email" placeholder="Email *" />
+                                <textarea rows="4" placeholder="Message"></textarea>
+			                    <input type="submit" id="button" value="SEND"/>
+		                </form>
+                </div>
+                
+        </div>
+
+        <Footer />
+	</body>
+</html>
